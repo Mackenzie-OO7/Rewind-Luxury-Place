@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black !important;
+    background: -o-linear-gradient(315deg, #2D3436 0%, #000000 74%);
+}
+.main-color{
+    color: #4834D4 !important;
+}
+.main-colorg{
+    background-color:#4834D4 !important;
+}
+.link-light:hover{
+    color: #4834D4 !important;
+    font-weight: bold !important;
+}
+
+.parallax {
+    background: url(../img/rewind-landscape.jpg) no-repeat center;
+    background-size: cover; 
+    background-attachment: fixed; 
+    width: 600px; 
+    height: 100vh;
+}
+
+@media (max-width: 375px) {
+    .parallax {
+        width: 300px; 
+    }
+}
+
+@media (max-width: 603px) {
+    .parallax {
+        width: 400px; 
+    }
+}
