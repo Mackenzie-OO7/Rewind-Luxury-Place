@@ -7,6 +7,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: black !important;
     background: -o-linear-gradient(315deg, #2D3436 0%, #000000 74%);
+    overflow-y: none;
 }
 .main-color{
     color: #4834D4 !important;
@@ -39,7 +40,7 @@ body{
     }
 }
 
-#glow {
+.glow {
     font-size: 80px;
     color: #fff;
     text-align: center;

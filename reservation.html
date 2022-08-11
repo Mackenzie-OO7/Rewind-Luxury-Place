@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script type="text/javascript">
+
+        function validateForm() {
+        if (document.forms[0].myEmail.value == "" ) {
+            alert("Please enter an e-mail address.");
+            return false;
+        } // end if
+        return true;
+        } // end function validateForm
+        // -->
+        </script>
+</head>
+<body>
+      <!-- Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="index.html"><img src="img/rewind_logo.png" width="50%" height="2%" class="d-inline-block align-text-top" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-light pe-5" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link link-light pe-5">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservation.html" class="nav-link active main-color fw-bold pe-5" aria-current="page">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link link-light pe-5">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link link-light pe-5">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link link-light pe-5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div id="reservation" class="light-wrapper bg-dark">
+            <section class="ss-style-top"></section>
+            <div class="container inner">
+                <h2 class="section-title text-center fs-1 text-white">Make a Reservation here</h2>
+                <p class="lead main text-center text-white">Reserve your table &amp; enjoy.</p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <form class="form form-table" method="post" name="">
+                            <div class="form-group">
+                                <h4 class="text-white text-center">Fill the form for table reservation (all fields required)</h4>
+                            </div>
+    
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="first_name1">First Name</label>
+                                <input class="form-control hint" type="text" id="first_name1" name="first_name" placeholder="First name" required="">
+                              </div>
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="last_name1">Last Name</label>
+                                <input class="form-control hint" type="text" id="last_name1" name="last_name" placeholder="Last name" required="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="email1">Email</label>
+                                <input class="form-control hint" type="email" id="email1" name="email" placeholder="Email@domain.com" required="">
+                              </div>
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="phone1">Phone</label>
+                                <input class="form-control hint" type="text" id="phone1" name="phone" placeholder="Phone" required="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="reserv_date1">Reservation Date</label>
+                                <input class="form-control datepicker hasDatepicker hint" type="datetime-local" id="reserv_date1" name="reserv_date" required="">
+                              </div>
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="numb_guests1">Number of Guests</label>
+                                <input class="form-control hint" type="text" id="numb_guests1" name="numb_guests" placeholder="Number of guests" required="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="alt_reserv_date1">Time from:</label>
+                                <input class="form-control datepicker hasDatepicker hint" type="text" id="alt_reserv_date1" name="alt_reserv_date" placeholder="" required="">
+                              </div>
+                              <div class="col-lg-6 col-md-6 form-group">
+                                <label class="sr-only" for="time1">Time to:</label>
+                                <input class="form-control timepicker ui-timepicker-input hint" type="text" id="time1" name="time" placeholder="" required="" autocomplete="off">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-12 col-md-12">
+                                <p></p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-12 col-md-12">
+                                <button type="submit" class="btn btn-dark bg-black btn-lg">Reserve!</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div><!-- col-md-6 -->
+                    <div class="col-md-6 col-md-offset-1 mb-4 text-white">
+                        <div class="row justify-content-center">
+                            <h3 class="text-center col-lg-12 col-md-6"><i class="fa fa-clock-o fa-fw"></i>Hours</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-8 col-md-12">
+                                <h4>Lunch</h4>
+                                <p>Mon to Fri: 12:00 PM - 5:00 PM</p>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <h4>Dinner</h4>
+                                <p>Mon to Sat: 6:00 PM -  1:00 AM<br>Sun: 5:30 PM - 12:00 AM</p>
+                            </div>
+                        </div>
+                       
+                        
+    
+                        <!-- <h3><i class="fa fa-map-marker fa-fw"></i>Directions</h3>
+                        <p>Av das Américas, 4.666, Shopping Barra, Barra da Tijuca, Rio de Janeiro, RJ, Brazil</p>
+    
+                        <h3><i class="fa fa-mobile fa-fw"></i>Contacts</h3>
+                        <p>Email: <a href="mailto:yourname@rewindng.com">rewind.ng@customerservice.com</a></p>
+                        <p>Phone: +234 3456 678</p> -->
+    
+                    </div><!-- col-md-6 -->
+                </div>
+                <!-- /.services --> 
+            </div>
+            <!-- /.container -->
+            <section class="ss-style-bottom"></section>
+        </div><!-- #reservation -->
+    
+    </section>
+
+    <section>
+        <!-- <fieldset name="reserve">
+            <legend>Courts Reservation</legend>
+            <label for="facility">Facility:</label>
+            <select id="facility" name="facility" required>
+              <option value="default" disabled selected>-Please select a facility-</option>
+              <option value="badminton">Badminton</option>
+              <option value="squash">Squash</option>
+              <option value="racquetball">Racquetball</option>
+            </select><br>
+            
+            <label for="start_dt">Start time:</label>
+            <input id="start_dt" type="datetime-local" name="starttime" placeholder="mm/dd/yyyy hh:mm AM" required><br>
+            
+            <label for="end_dt">End time:</label>
+            <input id="end_dt" type="datetime-local" name="endtime" placeholder="mm/dd/yyyy hh:mm AM" required><br>
+            
+            <input id="terms" type="checkbox" value="agreeterms" required>
+            <label for="terms">I agree to the club’s reservation policy.</label>
+          </fieldset>
+          
+          <input type="submit" value="Reserve">
+        </form>
+        <div id="content">
+            <h2>Reservations at Pacific Trails</h2>
+            <h3>Contact Us</h3>
+                <form class="" method="post" action=" http://webdevbasics.net/scripts/pacific.php"  onsubmit="return validateForm();">
+              <label for="myFName">First Name: </label>
+              <input type="text" name="myFName" id="myFName">
+              <label for="myLName">Last Name: </label>
+              <input type="text" name="myLName" id="myLName">
+              <label for="myEmail">E-mail: </label>
+              <input type="text" name="myEmail" id="myEmail">
+              <label for="myPhone">Phone: </label>
+              <input type="text" name="myPhone" id="myPhone">
+              <label for="myComments">Comments: </label>
+              <textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
+              <input type="submit" value="Submit" id="mySubmit">
+            </form> -->
+            
+    </section>
+    
+    <footer>
+        <section id="footer-container" class="bg-black">
+            <div class="container pt-5 pb-5" data-aos="zoom-in" data-aos-delay="100" data-aos-easing="ease-in" data-aos-duration="1000">
+                <div class="row text-white pt-5 pb-5 m-auto text-center text-md-start text-wrap">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer-logo">
+                            <img src="img/rewind_logo.png"  width="100%" height="100%" class="d-inline-block align-text-top pt-4" alt="logo">
+                        </div>
+                        <p style="font-size: 14px;">&copy  2022 Rewind Luxury Place.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <h4 class="pb-4">CONTACT</h4>
+                        <p style="font-size: 14px;">Phone: +234 905 777 3361 </p>
+                        <p style="font-size: 14px;">Email: clientcare@rewind.ng</p>
+                        <p style="font-size: 14px;">10A Igboeze St, Independence Layout 400102, Enugu.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <h4 class="pb-4">WORKING HOURS</h4>
+                        <p style="font-size: 14px;">Mon - Fri: 12pm - 5am</p>
+                        <p style="font-size: 14px;">Saturday: 12pm - 5am</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <h4 class="pb-4">RESOURCES</h4>
+                        <a href="#" class="d-block text-decoration-none text-white pb-2" style="font-size: 14px;">Location</a>
+                        <a href="#" class="d-block text-decoration-none text-white pb-2" style="font-size: 14px;">FAQ</a>
+                        <a href="#" class="d-block text-decoration-none text-white" style="font-size: 14px;">Copyright &copy  2022 Rewind Luxury Place.</a>
+                        <div class="social-links pt-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f text-white pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram text-white pe-2"></i></a>
+                            <a href="contact.html#location"><i class="fa-solid fa-location-dot text-white pe-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
