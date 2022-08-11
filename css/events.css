@@ -22,6 +22,12 @@ body {
   left:-55px;
 }
 
+@media (max-width: 1023px) {
+  .footer-logo {
+      margin-left: 30%;
+  }
+}
+
 /* .main-color{
     color: #FF5829 !important;
 }

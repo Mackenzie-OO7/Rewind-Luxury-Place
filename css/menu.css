@@ -255,3 +255,8 @@ display:block;
     
   }
 
+@media (max-width: 1023px) {
+    .footer-logo {
+        margin-left: 30%;
+    }
+}
